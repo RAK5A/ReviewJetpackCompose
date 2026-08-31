@@ -2,10 +2,12 @@ package com.chamkartech.composereview.lesson02
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 /*
@@ -22,16 +24,16 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun ExpenseRowPractice() {
     // PROBLEM 1: this stacks vertically, you need horizontal
-    Column(
+    Row(
         modifier = Modifier
             // PROBLEM 2: the background does not cover the padding
-            .padding(16.dp)
             .background(Color(0xFFE8ECFF))
+            .padding(16.dp)
             .fillMaxWidth()
     ) {
         Text("Iced coffee")
 
-        // TODO: push the price to the right edge
+        Spacer(Modifier.weight(1f))
 
         Text("6,000 R")
     }
@@ -46,7 +48,15 @@ fun ExpenseRowPractice() {
 fun ThreeAcrossPractice() {
     Row(modifier = Modifier.fillMaxWidth()) {
         Text("Left")
+        Spacer(Modifier.weight(1f))
         Text("Middle")
+        Spacer(Modifier.weight(1f))
         Text("Right")
     }
+}
+
+@Composable
+@Preview(showBackground = true)
+fun Lesson02Preview() {
+    ExpenseRowPractice()
 }
