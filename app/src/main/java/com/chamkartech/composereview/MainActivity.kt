@@ -27,7 +27,13 @@ class MainActivity : ComponentActivity() {
             MaterialTheme {
                 Surface {
                     // <<< change this one line per exercise >>>
-                    com.chamkartech.composereview.lesson01.TogglePractice()
+                    // Exercise 1:
+//                    com.chamkartech.composereview.lesson01.TogglePractice()
+//                    com.chamkartech.composereview.lesson01.BrokenToggle()
+
+                    // Exercise 2:
+//                    com.chamkartech.composereview.lesson02.ExpenseRowPractice()
+                    com.chamkartech.composereview.lesson02.ThreeAcrossPractice()
                 }
             }
         }
