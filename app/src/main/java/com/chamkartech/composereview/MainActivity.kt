@@ -33,7 +33,11 @@ class MainActivity : ComponentActivity() {
 
                     // Exercise 2:
 //                    com.chamkartech.composereview.lesson02.ExpenseRowPractice()
-                    com.chamkartech.composereview.lesson02.ThreeAcrossPractice()
+//                    com.chamkartech.composereview.lesson02.ThreeAcrossPractice()
+
+                    // Exercise 3:
+                    com.chamkartech.composereview.lesson03.ExpenseListPractice()
+
                 }
             }
         }
