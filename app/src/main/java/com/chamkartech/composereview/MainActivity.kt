@@ -42,7 +42,10 @@ class MainActivity : ComponentActivity() {
 //                    com.chamkartech.composereview.lesson04.ExpenseScreenPractice()
 
                     // Exercise 5:
-                    com.chamkartech.composereview.lesson05.CounterPractice()
+//                    com.chamkartech.composereview.lesson05.CounterPractice()
+
+                    // Exercise 6:
+                    com.chamkartech.composereview.lesson06.SignUpFormPractice()
 
                 }
             }
